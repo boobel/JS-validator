@@ -15,40 +15,40 @@
     <div class="container">
       <form action="/" method="get" class="form">
         <h1>Create Account</h1>
-        <div class="form-control success">
+        <div class="form-control username">
           <label for="username">
-            Username
-            <input type="text" />
+            <p>Username</p>
+            <input type="text" class="usernameInput" required pattern="[A-Za-z]+"/>
             <i class="fa-solid fa-circle-check"></i>
             <i class="fa-solid fa-circle-exclamation"></i>
-            <span>error message</span>
+            <span id="username error">error message</span>
           </label>
         </div>
-        <div class="form-control error">
+        <div class="form-control email">
           <label for="email">
-            Email
-            <input type="email" />
+            <p>Email</p>
+            <input type="email" class="emailInput" required/>
             <i class="fa-solid fa-circle-check"></i>
             <i class="fa-solid fa-circle-exclamation"></i>
-            <span>error message</span>
+            <span id="email error">error message</span>
           </label>
         </div>
-        <div class="form-control">
+        <div class="form-control password">
           <label for="password">
-            Password
-            <input type="password" />
+            <p>Password</p>
+            <input type="text" class="passwordInput" required/>
             <i class="fa-solid fa-circle-check"></i>
             <i class="fa-solid fa-circle-exclamation"></i>
-            <span>error message</span>
+            <span id="password error">error message</span>
           </label>
         </div>
-        <div class="form-control">
+        <div class="form-control cpassword">
           <label for="confirm password">
-            Confirm password
-            <input type="password" />
+            <p>Confirm Password</p>
+            <input type="text" class = 'cpasswordInput' required/>
             <i class="fa-solid fa-circle-check"></i>
             <i class="fa-solid fa-circle-exclamation"></i>
-            <span>error message</span>
+            <span id="cpassword error">xd?</span>
           </label>
         </div>
         <button>Submit</button>

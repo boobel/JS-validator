@@ -24,7 +24,11 @@ body {
 }
 
 h1 {
-  margin: 10px;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 .form-control {
@@ -62,11 +66,11 @@ h1 {
 
 .form-control label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .form-control input {
-  border: 2px solid black;
+  border: 2px solid grey;
   border-radius: 5px;
   display: block;
   padding: 5px;
@@ -75,11 +79,12 @@ h1 {
 .form-control i {
   visibility: hidden;
   position: absolute;
-  top: 40px;
+  top: 65px;
   right: 20px;
 }
 
 span {
+  font-size: 60%;
   visibility: hidden;
   position: absolute;
   bottom: 0;
@@ -91,8 +96,21 @@ button {
   margin-left: auto;
   margin-right: auto;
   background-color: plum;
-  border: 2px solid grey;
+  border: none;
   border-radius: 15px;
   color: white;
   padding: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 5px 5px 2px grey;
+  transform: translateY(-10%);
+  transition: transform 0.3s;
+}
+
+button:active {
+  box-shadow: 5px 5px 2px grey;
+  transform: translateY(4px);
+  transition: transform 0.3s;
 }
