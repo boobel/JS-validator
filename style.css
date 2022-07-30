@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: plum;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  border-radius: 5%;
+  box-shadow: 25px 25px 3px grey;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.form-control {
+  position: relative;
+  margin: 5px;
+  padding: 15px;
+}
+
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.success i.fa-circle-check {
+  visibility: visible;
+  color: green;
+}
+
+.form-control.succes span {
+  visibility: hidden;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control.error i.fa-circle-exclamation {
+  visibility: visible;
+  color: red;
+}
+
+.form-control.error span {
+  visibility: visible;
+  color: red;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid black;
+  border-radius: 5px;
+  display: block;
+  padding: 5px;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+span {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: plum;
+  border: 2px solid grey;
+  border-radius: 15px;
+  color: white;
+  padding: 15px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c77c3bbfc6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/" method="get" class="form">
+        <h1>Create Account</h1>
+        <div class="form-control success">
+          <label for="username">
+            Username
+            <input type="text" />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>error message</span>
+          </label>
+        </div>
+        <div class="form-control error">
+          <label for="email">
+            Email
+            <input type="email" />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>error message</span>
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="password">
+            Password
+            <input type="password" />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>error message</span>
+          </label>
+        </div>
+        <div class="form-control">
+          <label for="confirm password">
+            Confirm password
+            <input type="password" />
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>error message</span>
+          </label>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
